@@ -1,5 +1,7 @@
 # ces: Canadian Election Study Data Package
 
+[![CRAN status](https://www.r-pkg.org/badges/version/ces)](https://CRAN.R-project.org/package=ces)
+
 This R package provides easy access to Canadian Election Study (CES) datasets for analysis in R.
 
 ## Installation
@@ -75,13 +77,19 @@ This is the CRAN-approved way to eliminate timestamp verification issues.
 
 ## Acknowledgments and Disclaimers
 
-### Data Source
-This package accesses data from the [Borealis Data repository](https://borealisdata.ca/), which serves as the official host for the Canadian Election Study datasets. We gratefully acknowledge Borealis Data for maintaining and providing access to these valuable datasets.
+### Data Sources
+This package accesses data from multiple sources including the [Borealis Data repository](https://borealisdata.ca/) and the [Canadian Election Study website](https://ces-eec.arts.ubc.ca/). We gratefully acknowledge both Borealis Data and the Canadian Election Study team for maintaining and providing access to these valuable datasets.
 
 The package author is not affiliated with the Canadian Election Study or Borealis Data. Users of this package should properly cite the original Canadian Election Study data in their research publications.
 
+### Original cesR Package
+We thank Paul A. Hodgetts and Rohan Alexander for their original [cesR package](https://hodgettsp.github.io/cesR/) that provided R access to Canadian Election Study data.
+
 ### Package Development
-This package was developed with assistance from Claude Sonnet 3.7, an AI assistant by Anthropic. Claude helped with structuring the package, writing documentation, and implementing the core functionality. The collaboration between the human author and AI demonstrates how these tools can be used to create helpful resources for the research community.
+This package was developed with assistance from Claude Sonnet 3.7 and 4.0 (Anthropic) and Google Jules, AI assistants that helped with structuring the package, writing documentation, and implementing the core functionality.
+
+### Contributing and Feature Requests
+Feel free to contact the package author about adding new features or if you have additional CES datasets you would like to see included in the package.
 
 ## License
 

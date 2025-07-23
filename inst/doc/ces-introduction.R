@@ -8,14 +8,15 @@ knitr::opts_chunk$set(
 library(ces)
 
 ## -----------------------------------------------------------------------------
-# List all available datasets
-list_ces_datasets()
+# List all available datasets with variants
+datasets <- list_ces_datasets()
+print(datasets)
 
-# Get detailed information about available datasets
-list_ces_datasets(details = TRUE)
+# View unique years available
+unique(datasets$year)
 
 ## ----eval=FALSE---------------------------------------------------------------
-# # Get the 2019 CES data
+# # Get the 2019 CES data (defaults to web survey)
 # ces_2019 <- get_ces("2019")
 # 
 # # View the first few rows
@@ -23,6 +24,23 @@ list_ces_datasets(details = TRUE)
 # 
 # # Get information about the dataset
 # dim(ces_2019)
+
+## ----eval=FALSE---------------------------------------------------------------
+# # Get the 2019 web survey (default)
+# ces_2019_web <- get_ces("2019", variant = "web")
+# 
+# # Get the 2019 phone survey
+# ces_2019_phone <- get_ces("2019", variant = "phone")
+# 
+# # Get the 2015 combined web and phone survey
+# ces_2015_combo <- get_ces("2015", variant = "combo")
+# 
+# # Get the 1972 September survey
+# ces_1972_sep <- get_ces("1972", variant = "sep")
+# 
+# # See which variants are available for a given year
+# datasets_2015 <- list_ces_datasets()
+# datasets_2015[datasets_2015$year == "2015", ]
 
 ## ----eval=FALSE---------------------------------------------------------------
 # # Get raw (uncleaned) data
@@ -66,12 +84,15 @@ list_ces_datasets(details = TRUE)
 #                                   variable_pattern = "vote")
 
 ## ----eval=FALSE---------------------------------------------------------------
-# # Get a subset of variables by name
+# # Get a subset of variables by name from web survey (default)
 # variables <- c("vote_choice", "age", "gender", "province", "education")
-# ces_subset <- get_ces_subset("2019", variables)
+# ces_subset <- get_ces_subset("2019", variables = variables)
+# 
+# # Get subset from phone survey
+# ces_subset_phone <- get_ces_subset("2019", variant = "phone", variables = variables)
 # 
 # # Get all variables containing "vote" in their name (using regex)
-# vote_vars <- get_ces_subset("2019", "vote", regex = TRUE)
+# vote_vars <- get_ces_subset("2019", variables = "vote", regex = TRUE)
 
 ## ----eval=FALSE---------------------------------------------------------------
 # # Get 2019 data
@@ -107,25 +128,38 @@ list_ces_datasets(details = TRUE)
 # download_pdf_codebook("2015", path = "~/Documents/CES_codebooks")
 
 ## ----eval=FALSE---------------------------------------------------------------
-# # Download a single CES dataset
+# # Download a single CES dataset (defaults to web for 2015/2019)
 # download_ces_dataset("2019", path = "~/Documents/CES_datasets")
 # 
-# # Download all available CES datasets to a folder
+# # Download a specific variant
+# download_ces_dataset("2019", variant = "phone", path = "~/Documents/CES_datasets")
+# 
+# # Download all available CES datasets to a folder (all variants)
 # download_all_ces_datasets(path = "~/Documents/CES_datasets")
 # 
-# # Download only specific years
+# # Download only specific years (all variants for those years)
 # download_all_ces_datasets(years = c("2015", "2019", "2021"))
+# 
+# # Download only web surveys for specific years
+# download_all_ces_datasets(years = c("2015", "2019"), variants = "web")
 
 ## ----eval=FALSE---------------------------------------------------------------
-# # Get 2019 data
-# ces_2019 <- get_ces("2019")
+# # Get 2019 web survey data (default)
+# ces_2019_web <- get_ces("2019")
 # 
-# # Table of vote choice by province
+# # Get 2019 phone survey data
+# ces_2019_phone <- get_ces("2019", variant = "phone")
+# 
+# # Compare sample sizes between survey modes
+# cat("Web survey sample size:", nrow(ces_2019_web), "\n")
+# cat("Phone survey sample size:", nrow(ces_2019_phone), "\n")
+# 
+# # Table of vote choice by province (web survey)
 # if (requireNamespace("dplyr", quietly = TRUE)) {
 #   library(dplyr)
 # 
 #   # Create a table of vote choice by province
-#   vote_by_province <- ces_2019 %>%
+#   vote_by_province <- ces_2019_web %>%
 #     group_by(province, vote_choice) %>%
 #     summarize(count = n(), .groups = "drop") %>%
 #     pivot_wider(names_from = vote_choice, values_from = count, values_fill = 0)

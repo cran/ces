@@ -29,25 +29,26 @@ document.addEventListener('DOMContentLoaded', function(e) {
 </script>
 
 <style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
 
 
 
 <style type="text/css">
-  code {
-    white-space: pre;
-  }
-  .sourceCode {
-    overflow: visible;
-  }
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -63,55 +64,54 @@ pre > code.sourceCode { white-space: pre-wrap; }
 pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
-  { counter-reset: source-line 0; }
+{ counter-reset: source-line 0; }
 pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
+{ position: relative; left: -4em; counter-increment: source-line; }
 pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
 div.sourceCode
-  {   }
+{ }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
 </style>
 <script>
 // apply pandoc div.sourceCode style to pre.sourceCode instead
@@ -341,7 +341,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ces)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(ces)</span></code></pre></div>
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
 <p>The <code>ces</code> package provides easy access to Canadian
@@ -352,34 +352,67 @@ Canadian political behavior, attitudes, and preferences.</p>
 </div>
 <div id="available-datasets" class="section level2">
 <h2>Available Datasets</h2>
-<p>The package currently provides access to CES datasets spanning from
-1965 to 2021:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List all available datasets</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">list_ces_datasets</span>()</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [1] &quot;1965&quot;      &quot;1968&quot;      &quot;1974-1980&quot; &quot;1984&quot;      &quot;1988&quot;      &quot;1993&quot;     </span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  [7] &quot;1997&quot;      &quot;2000&quot;      &quot;2004&quot;      &quot;2006&quot;      &quot;2008&quot;      &quot;2011&quot;     </span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [13] &quot;2015&quot;      &quot;2019&quot;      &quot;2021&quot;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get detailed information about available datasets</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">list_ces_datasets</span>(<span class="at">details =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; # A tibble: 15 × 3</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    year      type      description                                            </span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;                                                  </span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  1 1965      Survey    1965 Canadian Election Study                           </span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  2 1968      Survey    1968 Canadian Election Study                           </span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  3 1974-1980 Panel     1974-1980 Canadian Election Study Panel                </span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  4 1984      Survey    1984 Canadian Election Study                           </span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  5 1988      Survey    1988 Canadian Election Study                           </span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  6 1993      Survey    1993 Canadian Election Study                           </span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  7 1997      Survey    1997 Canadian Election Study                           </span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  8 2000      Survey    2000 Canadian Election Study                           </span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt;  9 2004      Survey    2004 Canadian Election Study                           </span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 10 2006      Survey    2006 Canadian Election Study                           </span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 11 2008      Survey    2008 Canadian Election Study                           </span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 12 2011      Survey    2011 Canadian Election Study                           </span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 13 2015      Web/Phone 2015 Canadian Election Study - Online and Phone Surveys</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 14 2019      Web/Phone 2019 Canadian Election Study - Online and Phone Surveys</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; 15 2021      Web/Phone 2021 Canadian Election Study - Online Survey</span></span></code></pre></div>
+<p>The package provides access to Canadian Election Study datasets
+spanning from 1965 to 2021, including different survey variants where
+available:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># List all available datasets with variants</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>datasets <span class="ot">&lt;-</span> <span class="fu">list_ces_datasets</span>()</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="co">#&gt; # A tibble: 16 × 2</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt;    year  variants                </span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;                   </span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="co">#&gt;  1 1965  single_survey           </span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co">#&gt;  2 1968  single_survey           </span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="co">#&gt;  3 1972  jnjl, sep, nov          </span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="co">#&gt;  4 1974  single_survey, 1974_1980</span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="co">#&gt;  5 1984  single_survey           </span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="co">#&gt;  6 1988  single_survey           </span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="co">#&gt;  7 1993  single_survey           </span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a><span class="co">#&gt;  8 1997  single_survey           </span></span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a><span class="co">#&gt;  9 2000  single_survey           </span></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a><span class="co">#&gt; 10 2004  single_survey           </span></span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a><span class="co">#&gt; 11 2006  single_survey           </span></span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="co">#&gt; 12 2008  single_survey           </span></span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a><span class="co">#&gt; 13 2011  single_survey           </span></span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a><span class="co">#&gt; 14 2015  web, phone, combo       </span></span>
+<span id="cb2-20"><a href="#cb2-20" tabindex="-1"></a><span class="co">#&gt; 15 2019  web, phone              </span></span>
+<span id="cb2-21"><a href="#cb2-21" tabindex="-1"></a><span class="co">#&gt; 16 2021  web</span></span>
+<span id="cb2-22"><a href="#cb2-22" tabindex="-1"></a><span class="fu">print</span>(datasets)</span>
+<span id="cb2-23"><a href="#cb2-23" tabindex="-1"></a><span class="co">#&gt; # A tibble: 16 × 2</span></span>
+<span id="cb2-24"><a href="#cb2-24" tabindex="-1"></a><span class="co">#&gt;    year  variants                </span></span>
+<span id="cb2-25"><a href="#cb2-25" tabindex="-1"></a><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt;                   </span></span>
+<span id="cb2-26"><a href="#cb2-26" tabindex="-1"></a><span class="co">#&gt;  1 1965  single_survey           </span></span>
+<span id="cb2-27"><a href="#cb2-27" tabindex="-1"></a><span class="co">#&gt;  2 1968  single_survey           </span></span>
+<span id="cb2-28"><a href="#cb2-28" tabindex="-1"></a><span class="co">#&gt;  3 1972  jnjl, sep, nov          </span></span>
+<span id="cb2-29"><a href="#cb2-29" tabindex="-1"></a><span class="co">#&gt;  4 1974  single_survey, 1974_1980</span></span>
+<span id="cb2-30"><a href="#cb2-30" tabindex="-1"></a><span class="co">#&gt;  5 1984  single_survey           </span></span>
+<span id="cb2-31"><a href="#cb2-31" tabindex="-1"></a><span class="co">#&gt;  6 1988  single_survey           </span></span>
+<span id="cb2-32"><a href="#cb2-32" tabindex="-1"></a><span class="co">#&gt;  7 1993  single_survey           </span></span>
+<span id="cb2-33"><a href="#cb2-33" tabindex="-1"></a><span class="co">#&gt;  8 1997  single_survey           </span></span>
+<span id="cb2-34"><a href="#cb2-34" tabindex="-1"></a><span class="co">#&gt;  9 2000  single_survey           </span></span>
+<span id="cb2-35"><a href="#cb2-35" tabindex="-1"></a><span class="co">#&gt; 10 2004  single_survey           </span></span>
+<span id="cb2-36"><a href="#cb2-36" tabindex="-1"></a><span class="co">#&gt; 11 2006  single_survey           </span></span>
+<span id="cb2-37"><a href="#cb2-37" tabindex="-1"></a><span class="co">#&gt; 12 2008  single_survey           </span></span>
+<span id="cb2-38"><a href="#cb2-38" tabindex="-1"></a><span class="co">#&gt; 13 2011  single_survey           </span></span>
+<span id="cb2-39"><a href="#cb2-39" tabindex="-1"></a><span class="co">#&gt; 14 2015  web, phone, combo       </span></span>
+<span id="cb2-40"><a href="#cb2-40" tabindex="-1"></a><span class="co">#&gt; 15 2019  web, phone              </span></span>
+<span id="cb2-41"><a href="#cb2-41" tabindex="-1"></a><span class="co">#&gt; 16 2021  web</span></span>
+<span id="cb2-42"><a href="#cb2-42" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" tabindex="-1"></a><span class="co"># View unique years available</span></span>
+<span id="cb2-44"><a href="#cb2-44" tabindex="-1"></a><span class="fu">unique</span>(datasets<span class="sc">$</span>year)</span>
+<span id="cb2-45"><a href="#cb2-45" tabindex="-1"></a><span class="co">#&gt;  [1] &quot;1965&quot; &quot;1968&quot; &quot;1972&quot; &quot;1974&quot; &quot;1984&quot; &quot;1988&quot; &quot;1993&quot; &quot;1997&quot; &quot;2000&quot; &quot;2004&quot;</span></span>
+<span id="cb2-46"><a href="#cb2-46" tabindex="-1"></a><span class="co">#&gt; [11] &quot;2006&quot; &quot;2008&quot; &quot;2011&quot; &quot;2015&quot; &quot;2019&quot; &quot;2021&quot;</span></span></code></pre></div>
+<p>Some years have multiple survey variants available:</p>
+<ul>
+<li><strong>2015</strong>: web, phone, and combo (combined) surveys</li>
+<li><strong>2019</strong>: web and phone surveys<br />
+</li>
+<li><strong>2021</strong>: web survey only</li>
+<li><strong>1972</strong>: three separate surveys (June/July, September,
+November)</li>
+<li><strong>1974</strong>: single survey (separate from the 1974-1980
+panel)</li>
+<li><strong>Other years</strong>: single survey datasets</li>
+</ul>
 </div>
 <div id="getting-data" class="section level2">
 <h2>Getting Data</h2>
@@ -388,60 +421,83 @@ Canadian political behavior, attitudes, and preferences.</p>
 <p>The primary function for accessing CES data is
 <code>get_ces()</code>, which downloads and processes the dataset for a
 specified year:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the 2019 CES data</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>ces_2019 <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View the first few rows</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ces_2019)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get information about the dataset</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(ces_2019)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="co"># Get the 2019 CES data (defaults to web survey)</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>ces_2019 <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co"># View the first few rows</span></span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="fu">head</span>(ces_2019)</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="co"># Get information about the dataset</span></span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a><span class="fu">dim</span>(ces_2019)</span></code></pre></div>
+</div>
+<div id="working-with-survey-variants" class="section level3">
+<h3>Working with Survey Variants</h3>
+<p>For years with multiple survey modes, you can specify which variant
+to download:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co"># Get the 2019 web survey (default)</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>ces_2019_web <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;web&quot;</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="co"># Get the 2019 phone survey</span></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>ces_2019_phone <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;phone&quot;</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="co"># Get the 2015 combined web and phone survey</span></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a>ces_2015_combo <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2015&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;combo&quot;</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co"># Get the 1972 September survey</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>ces_1972_sep <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;1972&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;sep&quot;</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co"># See which variants are available for a given year</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>datasets_2015 <span class="ot">&lt;-</span> <span class="fu">list_ces_datasets</span>()</span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a>datasets_2015[datasets_2015<span class="sc">$</span>year <span class="sc">==</span> <span class="st">&quot;2015&quot;</span>, ]</span></code></pre></div>
+<p><strong>Default Behavior:</strong> - For 2015 and 2019: defaults to
+“web” variant - For all other years: uses the available variant (most
+have only one)</p>
 </div>
 <div id="customizing-data-retrieval" class="section level3">
 <h3>Customizing Data Retrieval</h3>
 <p>The <code>get_ces()</code> function offers several options for
 customizing how data is retrieved and processed:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get raw (uncleaned) data</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>ces_raw <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">clean =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get data as a data.frame instead of a tibble</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>ces_df <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">format =</span> <span class="st">&quot;data.frame&quot;</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Bypass cache and download fresh data</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>ces_fresh <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">use_cache =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Disable metadata preservation if needed (not recommended)</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ces_without_metadata <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">preserve_metadata =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Silent mode - no progress messages</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>ces_silent <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">verbose =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co"># Get raw (uncleaned) data</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>ces_raw <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">clean =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co"># Get data as a data.frame instead of a tibble</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>ces_df <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">format =</span> <span class="st">&quot;data.frame&quot;</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co"># Bypass cache and download fresh data</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>ces_fresh <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">use_cache =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co"># Disable metadata preservation if needed (not recommended)</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>ces_without_metadata <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">preserve_metadata =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="co"># Silent mode - no progress messages</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>ces_silent <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">verbose =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <div id="working-with-variable-metadata" class="section level4">
 <h4>Working with Variable Metadata</h4>
 <p>CES datasets contain rich metadata including question text and value
 labels. The package preserves this metadata, which you can access:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># All metadata is preserved by default</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>ces_data <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Access variable label (question text)</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">attr</span>(ces_data<span class="sc">$</span>vote_choice, <span class="st">&quot;label&quot;</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Access value labels</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="fu">attr</span>(ces_data<span class="sc">$</span>vote_choice, <span class="st">&quot;labels&quot;</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># See all attributes of a variable</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(ces_data<span class="sc">$</span>vote_choice)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="co"># All metadata is preserved by default</span></span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>ces_data <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co"># Access variable label (question text)</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="fu">attr</span>(ces_data<span class="sc">$</span>vote_choice, <span class="st">&quot;label&quot;</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co"># Access value labels</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="fu">attr</span>(ces_data<span class="sc">$</span>vote_choice, <span class="st">&quot;labels&quot;</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co"># See all attributes of a variable</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="fu">attributes</span>(ces_data<span class="sc">$</span>vote_choice)</span></code></pre></div>
 <p>You can also examine metadata across the entire dataset with the
 <code>examine_metadata()</code> function:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get an overview of all variables with metadata</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>metadata_summary <span class="ot">&lt;-</span> <span class="fu">examine_metadata</span>(ces_data)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the first few entries</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(metadata_summary)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Find variables with value labels about voting</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>voting_metadata <span class="ot">&lt;-</span> <span class="fu">examine_metadata</span>(ces_data, </span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">show_labels =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">variable_pattern =</span> <span class="st">&quot;vote&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co"># Get an overview of all variables with metadata</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>metadata_summary <span class="ot">&lt;-</span> <span class="fu">examine_metadata</span>(ces_data)</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="co"># Show the first few entries</span></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="fu">head</span>(metadata_summary)</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co"># Find variables with value labels about voting</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>voting_metadata <span class="ot">&lt;-</span> <span class="fu">examine_metadata</span>(ces_data, </span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a>                                  <span class="at">show_labels =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a>                                  <span class="at">variable_pattern =</span> <span class="st">&quot;vote&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -450,76 +506,92 @@ labels. The package preserves this metadata, which you can access:</p>
 <p>For many analyses, you may only need a subset of variables. The
 <code>get_ces_subset()</code> function allows you to select specific
 variables:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a subset of variables by name</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>variables <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;vote_choice&quot;</span>, <span class="st">&quot;age&quot;</span>, <span class="st">&quot;gender&quot;</span>, <span class="st">&quot;province&quot;</span>, <span class="st">&quot;education&quot;</span>)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>ces_subset <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, variables)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Get all variables containing &quot;vote&quot; in their name (using regex)</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>vote_vars <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, <span class="st">&quot;vote&quot;</span>, <span class="at">regex =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co"># Get a subset of variables by name from web survey (default)</span></span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>variables <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;vote_choice&quot;</span>, <span class="st">&quot;age&quot;</span>, <span class="st">&quot;gender&quot;</span>, <span class="st">&quot;province&quot;</span>, <span class="st">&quot;education&quot;</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>ces_subset <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variables =</span> variables)</span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co"># Get subset from phone survey</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>ces_subset_phone <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;phone&quot;</span>, <span class="at">variables =</span> variables)</span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co"># Get all variables containing &quot;vote&quot; in their name (using regex)</span></span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a>vote_vars <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variables =</span> <span class="st">&quot;vote&quot;</span>, <span class="at">regex =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
 <div id="understanding-variables-with-codebooks" class="section level2">
 <h2>Understanding Variables with Codebooks</h2>
 <p>CES datasets contain many variables with complex coding schemes. The
 <code>create_codebook()</code> function helps you understand these
 variables:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get 2019 data</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>ces_2019 <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a codebook</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>codebook <span class="ot">&lt;-</span> <span class="fu">create_codebook</span>(ces_2019)</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># View the first few entries</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(codebook)</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Find variables about a specific topic</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>voting_vars <span class="ot">&lt;-</span> codebook <span class="sc">%&gt;%</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">&quot;vote|voted&quot;</span>, question, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(variable)</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Use these variables in your analysis</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>voting_data <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variables =</span> voting_vars)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="co"># Get 2019 data</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>ces_2019 <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co"># Create a codebook</span></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>codebook <span class="ot">&lt;-</span> <span class="fu">create_codebook</span>(ces_2019)</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a><span class="co"># View the first few entries</span></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a><span class="fu">head</span>(codebook)</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="co"># Find variables about a specific topic</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb9-12"><a href="#cb9-12" tabindex="-1"></a>voting_vars <span class="ot">&lt;-</span> codebook <span class="sc">%&gt;%</span></span>
+<span id="cb9-13"><a href="#cb9-13" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">&quot;vote|voted&quot;</span>, question, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb9-14"><a href="#cb9-14" tabindex="-1"></a>  <span class="fu">pull</span>(variable)</span>
+<span id="cb9-15"><a href="#cb9-15" tabindex="-1"></a></span>
+<span id="cb9-16"><a href="#cb9-16" tabindex="-1"></a><span class="co"># Use these variables in your analysis</span></span>
+<span id="cb9-17"><a href="#cb9-17" tabindex="-1"></a>voting_data <span class="ot">&lt;-</span> <span class="fu">get_ces_subset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variables =</span> voting_vars)</span></code></pre></div>
 <p>You can export the codebook to a CSV or Excel file:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Export to CSV </span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">export_codebook</span>(codebook, <span class="st">&quot;ces_2019_codebook.csv&quot;</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Export to Excel (requires openxlsx package)</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">export_codebook</span>(codebook, <span class="st">&quot;ces_2019_codebook.xlsx&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="co"># Export to CSV </span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="fu">export_codebook</span>(codebook, <span class="st">&quot;ces_2019_codebook.csv&quot;</span>)</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="co"># Export to Excel (requires openxlsx package)</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a><span class="fu">export_codebook</span>(codebook, <span class="st">&quot;ces_2019_codebook.xlsx&quot;</span>)</span></code></pre></div>
 <p>You can also download the official PDF codebook documents:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the official CES codebook PDF</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">download_pdf_codebook</span>(<span class="st">&quot;2019&quot;</span>)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Download to a specific folder</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">download_pdf_codebook</span>(<span class="st">&quot;2015&quot;</span>, <span class="at">path =</span> <span class="st">&quot;~/Documents/CES_codebooks&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co"># Download the official CES codebook PDF</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">download_pdf_codebook</span>(<span class="st">&quot;2019&quot;</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="co"># Download to a specific folder</span></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="fu">download_pdf_codebook</span>(<span class="st">&quot;2015&quot;</span>, <span class="at">path =</span> <span class="st">&quot;~/Documents/CES_codebooks&quot;</span>)</span></code></pre></div>
 <p>The package also allows downloading the raw data files directly:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download a single CES dataset</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">download_ces_dataset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">path =</span> <span class="st">&quot;~/Documents/CES_datasets&quot;</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Download all available CES datasets to a folder</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">download_all_ces_datasets</span>(<span class="at">path =</span> <span class="st">&quot;~/Documents/CES_datasets&quot;</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Download only specific years</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="fu">download_all_ces_datasets</span>(<span class="at">years =</span> <span class="fu">c</span>(<span class="st">&quot;2015&quot;</span>, <span class="st">&quot;2019&quot;</span>, <span class="st">&quot;2021&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co"># Download a single CES dataset (defaults to web for 2015/2019)</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">download_ces_dataset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">path =</span> <span class="st">&quot;~/Documents/CES_datasets&quot;</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="co"># Download a specific variant</span></span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="fu">download_ces_dataset</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;phone&quot;</span>, <span class="at">path =</span> <span class="st">&quot;~/Documents/CES_datasets&quot;</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" tabindex="-1"></a><span class="co"># Download all available CES datasets to a folder (all variants)</span></span>
+<span id="cb12-8"><a href="#cb12-8" tabindex="-1"></a><span class="fu">download_all_ces_datasets</span>(<span class="at">path =</span> <span class="st">&quot;~/Documents/CES_datasets&quot;</span>)</span>
+<span id="cb12-9"><a href="#cb12-9" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" tabindex="-1"></a><span class="co"># Download only specific years (all variants for those years)</span></span>
+<span id="cb12-11"><a href="#cb12-11" tabindex="-1"></a><span class="fu">download_all_ces_datasets</span>(<span class="at">years =</span> <span class="fu">c</span>(<span class="st">&quot;2015&quot;</span>, <span class="st">&quot;2019&quot;</span>, <span class="st">&quot;2021&quot;</span>))</span>
+<span id="cb12-12"><a href="#cb12-12" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" tabindex="-1"></a><span class="co"># Download only web surveys for specific years</span></span>
+<span id="cb12-14"><a href="#cb12-14" tabindex="-1"></a><span class="fu">download_all_ces_datasets</span>(<span class="at">years =</span> <span class="fu">c</span>(<span class="st">&quot;2015&quot;</span>, <span class="st">&quot;2019&quot;</span>), <span class="at">variants =</span> <span class="st">&quot;web&quot;</span>)</span></code></pre></div>
 </div>
 <div id="example-analysis" class="section level2">
 <h2>Example Analysis</h2>
 <p>Here’s a simple example of how to use the package to analyze voting
 patterns:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get 2019 data</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>ces_2019 <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Table of vote choice by province</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">requireNamespace</span>(<span class="st">&quot;dplyr&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(dplyr)</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a table of vote choice by province</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  vote_by_province <span class="ot">&lt;-</span> ces_2019 <span class="sc">%&gt;%</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(province, vote_choice) <span class="sc">%&gt;%</span></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">count =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> vote_choice, <span class="at">values_from =</span> count, <span class="at">values_fill =</span> <span class="dv">0</span>)</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(vote_by_province)</span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co"># Get 2019 web survey data (default)</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>ces_2019_web <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a><span class="co"># Get 2019 phone survey data</span></span>
+<span id="cb13-5"><a href="#cb13-5" tabindex="-1"></a>ces_2019_phone <span class="ot">&lt;-</span> <span class="fu">get_ces</span>(<span class="st">&quot;2019&quot;</span>, <span class="at">variant =</span> <span class="st">&quot;phone&quot;</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" tabindex="-1"></a><span class="co"># Compare sample sizes between survey modes</span></span>
+<span id="cb13-8"><a href="#cb13-8" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Web survey sample size:&quot;</span>, <span class="fu">nrow</span>(ces_2019_web), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb13-9"><a href="#cb13-9" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Phone survey sample size:&quot;</span>, <span class="fu">nrow</span>(ces_2019_phone), <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb13-10"><a href="#cb13-10" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" tabindex="-1"></a><span class="co"># Table of vote choice by province (web survey)</span></span>
+<span id="cb13-12"><a href="#cb13-12" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">requireNamespace</span>(<span class="st">&quot;dplyr&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
+<span id="cb13-13"><a href="#cb13-13" tabindex="-1"></a>  <span class="fu">library</span>(dplyr)</span>
+<span id="cb13-14"><a href="#cb13-14" tabindex="-1"></a>  </span>
+<span id="cb13-15"><a href="#cb13-15" tabindex="-1"></a>  <span class="co"># Create a table of vote choice by province</span></span>
+<span id="cb13-16"><a href="#cb13-16" tabindex="-1"></a>  vote_by_province <span class="ot">&lt;-</span> ces_2019_web <span class="sc">%&gt;%</span></span>
+<span id="cb13-17"><a href="#cb13-17" tabindex="-1"></a>    <span class="fu">group_by</span>(province, vote_choice) <span class="sc">%&gt;%</span></span>
+<span id="cb13-18"><a href="#cb13-18" tabindex="-1"></a>    <span class="fu">summarize</span>(<span class="at">count =</span> <span class="fu">n</span>(), <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-19"><a href="#cb13-19" tabindex="-1"></a>    <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> vote_choice, <span class="at">values_from =</span> count, <span class="at">values_fill =</span> <span class="dv">0</span>)</span>
+<span id="cb13-20"><a href="#cb13-20" tabindex="-1"></a>  </span>
+<span id="cb13-21"><a href="#cb13-21" tabindex="-1"></a>  <span class="fu">print</span>(vote_by_province)</span>
+<span id="cb13-22"><a href="#cb13-22" tabindex="-1"></a>}</span></code></pre></div>
 </div>
 <div id="conclusion" class="section level2">
 <h2>Conclusion</h2>
@@ -532,15 +604,20 @@ official website or refer to the dataset documentation.</p>
 </div>
 <div id="acknowledgments" class="section level2">
 <h2>Acknowledgments</h2>
-<p>This package accesses data from the <a href="https://borealisdata.ca/">Borealis Data repository</a>, which
-serves as the official host for the Canadian Election Study datasets. We
-gratefully acknowledge Borealis Data for maintaining and providing
-access to these valuable datasets.</p>
+<p>This package accesses Canadian Election Study data from multiple
+sources including the <a href="https://borealisdata.ca/">Borealis Data
+repository</a> (the primary institutional repository for most CES
+datasets) and the <a href="https://ces-eec.arts.ubc.ca/">Canadian
+Election Study website</a> (the official CES project website hosting
+additional datasets). We gratefully acknowledge both Borealis Data and
+the Canadian Election Study team for maintaining and providing access to
+these valuable datasets.</p>
 <p><strong>Important Disclaimer</strong>: This package is not officially
-affiliated with the Canadian Election Study or Borealis Data. Users of
-this package should properly cite the original Canadian Election Study
-data in their research publications according to the citation guidelines
-provided by the CES.</p>
+affiliated with the Canadian Election Study, Borealis Data, or the
+University of British Columbia. Users of this package should properly
+cite the original Canadian Election Study data in their research
+publications according to the citation guidelines provided by the
+CES.</p>
 <p>The package was developed with assistance from Claude Sonnet 3.7, an
 AI assistant by Anthropic, demonstrating how these tools can be used to
 create helpful resources for the research community.</p>

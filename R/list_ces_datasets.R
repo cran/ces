@@ -1,38 +1,53 @@
 #' List Available Canadian Election Study Datasets
 #'
-#' This function returns information about available CES datasets that can be
-#' accessed through the package.
+#' This function displays a formatted catalog of all available CES datasets that can be
+#' accessed through the package, showing year and available variants.
+#' One row per year with variants listed as comma-separated values.
 #'
-#' @param details Logical indicating whether to return detailed information
-#'   about each dataset. Default is FALSE.
-#'
-#' @return If details is FALSE, a character vector of available dataset years.
-#'   If TRUE, a tibble with columns for year, type, and description.
+#' @return Invisibly returns a tibble with columns for year and variants.
+#'   The catalog is printed to the console for easy viewing.
 #'
 #' @examples
-#' # Get list of available years
+#' # Display catalog of all available datasets by year
 #' list_ces_datasets()
 #'
-#' # Get detailed information
-#' list_ces_datasets(details = TRUE)
-#'
 #' @export
-list_ces_datasets <- function(details = FALSE) {
-  # Basic list of available years
-  years <- ces_datasets$year
+list_ces_datasets <- function() {
+  # Get unique years and aggregate variants
+  years <- unique(ces_datasets$year)
   
-  if (!details) {
-    return(years)
+  # Create result data frame
+  result_list <- list()
+  for (year in years) {
+    year_data <- ces_datasets[ces_datasets$year == year, ]
+    variants <- paste(year_data$variant, collapse = ", ")
+    result_list[[length(result_list) + 1]] <- list(year = year, variants = variants)
   }
   
-  # Create a tibble with details about each dataset
-  if (!requireNamespace("tibble", quietly = TRUE)) {
-    warning("Package 'tibble' is required for detailed output. Returning year vector instead.")
-    return(years)
+  # Convert to data frame
+  result_df <- do.call(rbind, lapply(result_list, data.frame, stringsAsFactors = FALSE))
+  
+  # Sort by year (handle mixed character/numeric years properly)
+  year_order <- order(
+    suppressWarnings(
+      ifelse(grepl("-", result_df$year), 
+             as.numeric(substr(result_df$year, 1, 4)), 
+             as.numeric(result_df$year))
+    )
+  )
+  result_df <- result_df[year_order, ]
+  
+  # Create tibble if available, otherwise use data.frame
+  if (requireNamespace("tibble", quietly = TRUE)) {
+    result <- tibble::as_tibble(result_df)
+  } else {
+    result <- result_df
+    class(result) <- "data.frame"
   }
   
-  # Return selected columns from the internal dataset
-  result <- ces_datasets[, c("year", "type", "description")]
+  # Print all rows
+  print(result, n = Inf)
   
-  return(result)
+  # Return invisibly so the output isn't printed twice
+  return(invisible(result))
 }

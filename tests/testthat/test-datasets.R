@@ -1,16 +1,38 @@
-test_that("list_ces_datasets returns expected formats", {
-  # Test that list_ces_datasets returns a character vector by default
-  years <- list_ces_datasets()
-  expect_type(years, "character")
-  expect_gt(length(years), 0)
+test_that("list_ces_datasets returns expected structure with variants", {
+  # Test the function returns a data frame with year and variants columns
+  datasets <- list_ces_datasets()
+  expect_true(is.data.frame(datasets))
+  expect_true("year" %in% names(datasets))
+  expect_true("variants" %in% names(datasets))
   
-  # Skip detailed test if tibble not available
-  skip_if_not_installed("tibble")
+  # Test that important years are present
+  years <- datasets$year
+  expect_true("2019" %in% years)
+  expect_true("2015" %in% years)
+  expect_true("2021" %in% years)
+  expect_true("1972" %in% years)
+  expect_true("1974" %in% years)
   
-  # Test that list_ces_datasets(details = TRUE) returns a tibble with expected columns
-  details <- list_ces_datasets(details = TRUE)
-  expect_s3_class(details, "tbl_df")
-  expect_named(details, c("year", "type", "description"))
+  # Test that variants exist for 2015 and 2019 (comma-separated format)
+  variants_2015 <- datasets[datasets$year == "2015", "variants"]
+  expect_true(grepl("web", variants_2015))
+  expect_true(grepl("phone", variants_2015))
+  expect_true(grepl("combo", variants_2015))
+  
+  variants_2019 <- datasets[datasets$year == "2019", "variants"]
+  expect_true(grepl("web", variants_2019))
+  expect_true(grepl("phone", variants_2019))
+  
+  # Test that 1972 has multiple variants (comma-separated)
+  variants_1972 <- datasets[datasets$year == "1972", "variants"]
+  expect_true(grepl("jnjl", variants_1972))
+  expect_true(grepl("sep", variants_1972))
+  expect_true(grepl("nov", variants_1972))
+  
+  # Test that 1974 has both single_survey and 1974_1980 variants
+  variants_1974 <- datasets[datasets$year == "1974", "variants"]
+  expect_true(grepl("single_survey", variants_1974))
+  expect_true(grepl("1974_1980", variants_1974))
 })
 
 test_that("get_ces_subset validates inputs correctly", {
