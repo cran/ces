@@ -1,6 +1,6 @@
 Package: ces
 Title: Access to Canadian Election Study Data
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: 
     person(given = "Laurence-Olivier",
            family = "M. Foisy",
@@ -31,6 +31,6 @@ URL: https://github.com/laurenceomfoisy/ces
 BugReports: https://github.com/laurenceomfoisy/ces/issues
 Depends: R (>= 3.5)
 NeedsCompilation: no
-Packaged: 2025-07-23 20:24:28 UTC; ral
+Packaged: 2025-07-25 15:00:09 UTC; ral
 Repository: CRAN
-Date/Publication: 2025-07-23 20:40:22 UTC
+Date/Publication: 2025-07-25 17:40:07 UTC
